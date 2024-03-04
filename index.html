@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <section class="crud">
+            <h1 class="crud__title">REGISTRO DE USUARIOS</h1>
+            <form id="formRegister" class="crud__form">
+                <input type="text" placeholder="Nombre" id="nameInput" class="form__input">
+                <input type="text" placeholder="Edad" id="edadInput" class="form__input">
+                <input type="text" placeholder="Email" id="emailInput" class="form__input">
+                <input type="text" placeholder="Genero" id="generoInput" class="form__input">
+                <input type="text" placeholder="Intereses" id="interesesInput" class="form__input">
+                <input type="text" placeholder="Comentarios" id="comentariosInput" class="form__input">
+                <button type="submit" id="submitButton" class="button button--primary">GUARDAR</button>
+            </form>
+            <table class="crud__table">
+                <thead>
+                    <tr>
+                        <th class="table__header">Nombre</th>
+                        <th class="table__header">Edad</th>
+                        <th class="table__header">Email</th>
+                        <th class="table__header">Genero</th>
+                        <th class="table__header">Intereses</th>
+                        <th class="table__header">Comentarios</th>
+                        <th class="table__header">Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="table__body">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
